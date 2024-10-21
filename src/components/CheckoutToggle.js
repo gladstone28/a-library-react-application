@@ -4,8 +4,9 @@ function CheckoutToggle({ media }) {
   const [checkedOut, setCheckedOut] = useState(media.isCheckedOut);
 
   const toggleStatus = () => {
-    media.toggleCheckOutStatus();
-    setCheckedOut(!checkedOut);
+    // Update the isCheckedOut property directly
+    media.isCheckedOut = !media.isCheckedOut;
+    setCheckedOut(media.isCheckedOut);  // Update the component state to reflect the change
   };
 
   return (

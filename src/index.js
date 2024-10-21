@@ -1,11 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'; // If you have any CSS for styling
+import ReactDOM from 'react-dom/client';  // Use createRoot from react-dom/client
 import App from './App';
+import './App.css'; // Optional: to include styles
 
-ReactDOM.render(
+// Find the root element in your HTML
+const rootElement = document.getElementById('root');
+
+// Create a root and render the app
+const root = ReactDOM.createRoot(rootElement);
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')  // Ensure your index.html has a root div with id 'root'
+  </React.StrictMode>
 );

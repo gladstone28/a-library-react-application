@@ -1,3 +1,4 @@
+//MediaItem.js
 import React from 'react';
 import CheckoutToggle from './CheckoutToggle';
 import Rating from './Rating';
