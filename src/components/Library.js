@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MediaList from './MediaList';
 
-function Library() {
+function Library({ filter }) {
   // Hardcoded media items
   const [mediaItems] = useState([
     {
@@ -78,10 +78,13 @@ function Library() {
     }
   ]);
 
+  // Filter media items based on the selected filter
+  const filteredItems = filter === 'All' ? mediaItems : mediaItems.filter(item => item.type === filter);
+
   return (
     <div className="library">
-      <h2>Library Collection</h2>
-      <MediaList mediaItems={mediaItems} />
+      <h2>Library Collection ({filter})</h2>
+      <MediaList mediaItems={filteredItems} />
     </div>
   );
 }

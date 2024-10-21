@@ -1,16 +1,11 @@
-//App.js
 import React from 'react';
-import Library from './components/Library';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css'; // For styling
+import LandingPage from './components/LandingPage';
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Library />
-      <Footer />
+    <div className="App">
+      <LandingPage />
     </div>
   );
 }

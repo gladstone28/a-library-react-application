@@ -1,111 +1,30 @@
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-/* Header Styles */
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px;
+.landing-page {
   text-align: center;
+  margin: 20px;
 }
 
-header h1 {
-  font-size: 2em;
-}
-
-/* Library and Media Item Styles */
 .library {
-  padding: 20px;
+  margin: 20px;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
 }
 
 .media-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .media-item {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
   padding: 20px;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
-
-.media-item h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.media-item p {
-  margin-bottom: 8px;
-}
-
-/* Button Styles */
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #45a049;
-}
-
-button:focus {
-  outline: 2px solid #4CAF50;
-}
-
-/* Rating Input Styles */
-.rating input {
-  padding: 5px;
-  margin-right: 10px;
-}
-
-/* Footer Styles */
-footer {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  margin-top: auto;
-}
-
-footer a {
-  color: white;
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: #ddd;
-}
-
