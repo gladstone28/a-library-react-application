@@ -29,6 +29,22 @@ function Library({ filter }) {
       ratings: [4, 5, 5]
     },
     {
+      type: 'Book',
+      title: '1984',
+      author: 'George Orwell',
+      pages: 328,
+      isCheckedOut: false,
+      ratings: [5, 5, 4]
+    },
+    {
+      type: 'Book',
+      title: 'The Catcher in the Rye',
+      author: 'J.D. Salinger',
+      pages: 277,
+      isCheckedOut: false,
+      ratings: [4, 5, 4]
+    },
+    {
       type: 'Movie',
       title: 'Jurassic Park',
       director: 'Steven Spielberg',
@@ -53,6 +69,22 @@ function Library({ filter }) {
       ratings: [5, 5, 4]
     },
     {
+      type: 'Movie',
+      title: 'The Godfather',
+      director: 'Francis Ford Coppola',
+      runTime: 175,
+      isCheckedOut: false,
+      ratings: [5, 5, 5]
+    },
+    {
+      type: 'Movie',
+      title: 'Forrest Gump',
+      director: 'Robert Zemeckis',
+      runTime: 142,
+      isCheckedOut: false,
+      ratings: [5, 4, 5]
+    },
+    {
       type: 'CD',
       title: 'Abbey Road',
       artist: 'The Beatles',
@@ -75,6 +107,22 @@ function Library({ filter }) {
       songs: ['Back in Black', 'You Shook Me All Night Long'],
       isCheckedOut: false,
       ratings: [4, 5, 5]
+    },
+    {
+      type: 'CD',
+      title: 'The Dark Side of the Moon',
+      artist: 'Pink Floyd',
+      songs: ['Speak to Me', 'Breathe', 'Time'],
+      isCheckedOut: false,
+      ratings: [5, 5, 4]
+    },
+    {
+      type: 'CD',
+      title: 'Hotel California',
+      artist: 'Eagles',
+      songs: ['Hotel California', 'New Kid in Town', 'Life in the Fast Lane'],
+      isCheckedOut: false,
+      ratings: [5, 4, 5]
     }
   ]);
 
